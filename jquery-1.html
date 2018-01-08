@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width:100px;height:100px;background: yellow;margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>今天是周一</li>
+			<li>今天是周一</li>
+			<li>今天是周一</li>
+			<li>今天是周一</li>
+			<li>今天是周一</li>
+			<li>今天是周一</li>
+		</ul>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</body>
+</html>
+<script src="js/jQuery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	
+//	$(function(){
+//		$('li:odd').css('background','red' )
+//	})
+//	$(function(){
+//		$('li:eq(1)').css('background','red' )
+//	})
+//	$(function(){
+//		$('li:gt(1)').css('background','red' )
+//	})
+	$(function(){
+		$('li:odd').css('background','red' )
+		var box = $('.box')
+		$('.box:eq('+ (box.length-2)+')').css('background','red')
+		$('.box:eq(1)').click(function(){
+			alert(1)
+		})
+	})
+	$(function(){
+		$('li:even').css('background','yellow' )
+	})
+	
+	
+	
+</script>
