@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div ul li{
+				list-style: none;
+				width:200px;border:1px solid red;
+			}
+			div ul li a{
+				text-decoration: none;
+			}
+			div ul li div{
+				width:198px;height:200px;border:1px solid red;display: none;
+			}
+		</style>
+	</head>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			$('ul li a').click(function(){
+				$(this).next().show(1000).parent().siblings().children('div').hide(1090)
+			})
+		})
+	</script>
+	<body>
+		<div>
+			<ul>
+				<li>
+					<a href="javascript:;">按键1</a>
+					<div>我是一号仓库</div>
+				</li>
+				<li>
+					<a href="javascript:;">按键2</a>
+					<div>我是2号仓库</div>
+				</li>
+				<li>
+					<a href="javascript:;">按键3</a>
+					<div>我是3号仓库</div>
+				</li>
+				<li>
+					<a href="javascript:;">按键4</a>
+					<div>我是4号仓库</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul{width:330px;height:220px;margin: 50px auto;}
+			ul li{
+				margin: 5px;background:red;width:100px;height: 100px;
+				float: left;list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(window).ready(function(){
+		$('ul li').mouseover(function(){
+			$(this).css('background','yellow').sidlings().css('background','red')
+		})
+		$('ul').mouseout(function(){
+			$('ul li').css('background','red')
+		})
+	})
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>今天是星期二，天气晴朗</li>
+			<li>今天是星期二，天气晴朗</li>
+			<li>今天是星期二，天气晴朗</li>
+			<span>今天是星期二，天气晴朗</span>
+			<li>今天是星期二，天气晴朗</li>
+			<i>今天是星期二，天气晴朗</i>
+			<li>今天是星期二，天气晴朗</li>
+			<li>今天是星期二，天气晴朗</li>
+			<ol>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+			</ol>
+			<ol>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+				<li>今天是星期二，天气晴朗</li>
+			</ol>
+		</ul>
+		
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//$('ul li').css('background','red')
+	//$('ul').find('span').css('background','red')
+	//$('ul').find('li').css('background','red')
+	//$('ul').children().css('background','red')
+	//$('ul').children('li').css('background','red')
+	//$('ul').children('ol').children().css('background','red')
+	//$('ol').children('li:even').css('background','red')
+	$('ol').children('li:odd').css('background','red')
+	$('ol').children('li:even').css('background','yellow')
+	var color;
+	$('ul ol li').hover(function(){
+		color = this.style.background;
+		$(this).siblings().css('background','blue');
+	},function(){
+		$(this).siblings().css('background',color);
+	})
+</script>
