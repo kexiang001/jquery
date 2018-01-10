@@ -110,14 +110,14 @@
 			
 		})
 		$('ul li').mouseout(function(){
-			$('ul li').stop()
+			$('ul li').stop(true,false)
 		})
-		$('.shutter').mouseout(function(){
-			$('ul li').stop()
-			$('ul li').eq(1).animate({left:160},2000)
-			$('ul li').eq(2).animate({left:320},2000)
-			$('ul li').eq(3).animate({left:480},2000)
-			$('ul li').eq(4).animate({left:640},2000)
-		})
+//		$('.shutter').mouseout(function(){
+//			$('ul li').stop(true)
+//			$('ul li').eq(1).animate({left:160},2000)
+//			$('ul li').eq(2).animate({left:320},2000)
+//			$('ul li').eq(3).animate({left:480},2000)
+//			$('ul li').eq(4).animate({left:640},2000)
+//		})
 	})
 </script>
