@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;height: 200px;margin: 50px auto;
+				background: yellow;line-height: 200px;text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).keydown(function(e){
+		$('div').html("keyCode值为："+e.keyCode)
+		
+		if(e.keyCode == 66){
+			$('div').css('background','blue')
+			
+		}else if(e.keyCode == 82){
+			$('div').css('background','red')
+		}else if(e.keyCode == 71){
+			$('div').css('background','green')
+		}else{
+			alert('没有设置')
+		}
+		console.log(e.keyCode)
+	})
+</script>

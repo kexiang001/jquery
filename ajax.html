@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+		// 地址
+	var url = "http://csit.top/api_cat.php"
+	
+	$.get(url, {
+		cat_id:45,
+		page:2,
+		pagesize:10
+	},function(str) {
+		console.log(str)
+//		var arr = str.data;
+//			console.log(arr)
+//		$(document).html(str)
+	})
+</script>
+
